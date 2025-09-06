@@ -1,0 +1,16 @@
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+
+const EmptyIcon = ({classForcontainer}) => {
+  const router = useRouter();
+  const pathname = usePathname();
+  return (
+    <div className={`w-full ${classForcontainer?classForcontainer:"h-[100%]"} flex justify-center items-center`}>
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFNUlEQVR4nO1aS4gcVRR9/pUoavxE3fjBIH4WCurKz8KNCv4ScSGYLIwOxh9RF2rAEcEPgr+lcatRGoxZjFN1zq2hJmMcCEwIOoIjo4ZkI0YMhMRoMEnL7X6v+3XZ3dNVXT3pGurAY3pevXfrvlP33nffrTKmRIkSJRYJlUrldJKPCLCZ5JyQh7TVfgOf6TUdY5YiSK4i8IuQ1W6NwM8AHjJLBaOjoyeTfNdb4Hci8mwURdcBWKZtIgiuJ/m8kLMNMoB3dK4pOthc/D8RMNJtUZVK5RSSzwh5xJFgim72Un/qf5O8M8W8uxwJURg+aAob8FD3eZJPaF8QBJeSfDWO4wuT47XPXrtE/1c3sZYzPzMzc5opGqjRvr6AXc7sdYG2b3Z8fPwiN1Z/N/xf5GXPHX6oWQHwsCkaBNhs/Xi9/5S9QFcjoWXx5KxvHQJssBb0qSkaCPxklV/p9ycXnCTEHwvgBitjzhQNBA4SOB7H8ZnJazUSgO+9/f9H5/s+tm/deo4NogdN0UDgsCrfLrPrlYA4js+21w+ZokHIX1X5MAyv7uQCmhS5QNfOBTRBctmhKRpIfm6D4JOdFq8BL4qiFT4JLUHQboUqywwDqtXqSQJMLpTPt+T25E6dp/MFeN1fvJML4OIGCXYbtCm0I6a3Bky6ew0EAO5IpZBtEfC4lwi9KCIXdIgLrzQSIWB9lnupjgMjQIBN7kY9jRd5wI7/S0RuS5MK19Jn4DjJ+3u6V9MKNplBYHx8/Awh96chQEHyI2v2h0mu63YY0msAntaDk3Wf93q9j2cF+1VXkzdEZLVvainjxofe3F26yDAMl7dkiPWA1zgOk3w/jT+3uILI6ixr7Aoht2QhwEFNWci9noxZzffjOD5V8wCvfy+A+9LKT8SCLSZPhGG43JrlUfXLLAQo9FRXsyRgj31Sjwqw1vruHr2W9eTnLf6o6upbWN+IgBHrx2JvkImAhrIia1wGqMddS8aavmQ2g2Bod56RfuS1QIBvrPC1eRBgj7pz3lObV1foR6YXOx6zf6dMHpiYmLi8th1pbi9ybh4EJKygpnTf8pp5wDJ3EANwZb9yDcmNfjqaFwHWCqaE3Ka/+5XnB2etH1idN/Yr17h0lOS9eRKQN3wCIuAeF2P6EypyixW0z0XnIhCg8YTAb/bB3ZxdKOoJjGZz3o2GnoDa/y75Aj7IJDD2WIzC8NaiEaBP3vb9nmmHiZp+NO+npEUhQOEdse9OLZDNSPpaS15PHstyTF2s5j8sbwdLV1WGt5eKyFX91gMWs0VBcHsyh9GaotYXsyQp29vVA0i+YYYMArxtdfu4XRabKtkSEtZ3nnJ9Wt0V8k/tnwiCa8yQQd82t6sHuHOMnhF6FbSCwL/6cjJRoKzVA0juMEMKrTVYHVe5vrGxsfPdSbZd6f1/EOAFK+SrtvUA4DkzpCD5ktXxyw66b+hFyM7kC0nHolqGWogZUpC8zG7TR/zCq1fNmllIwLV24IHp6emz2vjR12bIYWsWLe8j/Pil7xs7TybfspM/SfRPuQqOGXK4ClOyHtCoaANvdp5M7h7A3nxAfTPtQjSJ0VxkAPrs7kZAdUDtWBAEV6RY/EpXexxEW5AAkyNIfmFNcl2vc+y7gdzfCZ4QAqJmAJ3sJR3VbwJIfpsMZIUlII7j8wj8kcFU92kNsvAEKETkJruT1L//6950zDYAN5qcccIIGBaUBLC0gGrpAixjQDV7kCg4yhjAMgZUyxjAMgZUFwwSssTbwl+CcOm23L4cKVGihFkK+A/tARoeu5irtAAAAABJRU5ErkJggg=="
+        width="80"
+      />
+    </div>
+  );
+};
+export default EmptyIcon;

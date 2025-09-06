@@ -1,0 +1,546 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "dana-fanum";
+  src: local("dana-fanum"), url(/fonts/dana-fanum.ttf) format("truetype");
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: normal;
+}
+
+body {
+  font-family: "Dana Fanum";
+}
+
+.confirmForm {
+  width: 100%;
+  bottom: 0px;
+  /* height: 35vh; */
+  /* background-color: red; */
+  position: relative;
+}
+.confirmCodeStyle {
+  font-family: "dana-fanum" !important;
+}
+.back-color {
+  background-color: #ffffff;
+  /* background: rgb(255, 255, 255); */
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, #00558e 100%); */
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  height: 100vh;
+}
+
+.styles_react-code-input__CRulA > input {
+  font-family: "dana-fanum" !important;
+}
+
+.webkit-center {
+  text-align: -webkit-center;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+.Toastify {
+  position: relative !important;
+  z-index: 99999999999999 !important;
+}
+
+.logoRegister {
+  width: 150px;
+  margin-top: 30px;
+}
+
+.back-splash {
+  background: linear-gradient(
+    350.76deg,
+    rgb(88, 39, 104, 0.2) 54.5%,
+    rgb(0, 103, 79, 0.2) 100%
+  );
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.input-form {
+  background-color: white;
+  border: 5px;
+  border: 1px solid #cacaca;
+  width: 100%;
+  height: 40px;
+  outline: none !important;
+  padding: 0px 10px;
+  font-size: 15px;
+  color: #000;
+}
+
+.input-form:hover {
+  border: 5px;
+  border: 1px solid #aaa;
+  color: #000;
+}
+/* --------------------------------------------verificationInput------------------------------- */
+.vi__container {
+  height: 60px;
+  width: 275px;
+}
+.vi__character {
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background-color: rgba(0, 74, 145, 0.04);
+}
+.vi__character--inactive {
+  background-color: rgba(0, 74, 145, 0.1);
+}
+.vi__character--filled {
+  background-color: rgba(0, 74, 145, 0.1) !important;
+}
+.vi__character--selected {
+  outline: 2px solid #114f44;
+  color: #114f44;
+}
+/* -------------------------modal---------------------- */
+.modal-wrapper .modal-wrapper-content {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.ReactModal__Content {
+  left: 0 !important;
+  top: -16px !important;
+  height: auto;
+  width: 100% !important;
+  border-radius: 24px 24px 0px 0px !important;
+  /* padding: 16px 24px 32px 24px !important; */
+  padding: 0px !important;
+  gap: 32px !important;
+  inset: unset !important;
+  bottom: 0px !important;
+  height: 85% !important;
+}
+.osOverlay .ReactModal__Content {
+  padding: 0px !important;
+}
+.modal-wrapper .ReactModal__Content {
+  left: 0 !important;
+  top: -16px !important;
+  height: auto;
+  width: 100% !important;
+  border-radius: 24px 24px 0px 0px !important;
+  padding: 0px !important;
+  gap: 32px !important;
+  inset: unset !important;
+  bottom: 0px !important;
+  height: fit-content !important;
+}
+
+.modal-wrapper .ReactModal__Content {
+  transform: translate3d(0%, 100%, 0);
+}
+
+.modal-wrapper .ReactModal__Content--after-open {
+  transform: translate3d(0%, 0, 0);
+  transition: transform 400ms ease-in-out;
+}
+
+.modal-wrapper .ReactModal__Content--before-close {
+  transform: translate3d(0%, 100%, 0);
+  transition: transform 400ms ease-in-out;
+}
+.modal-wrapper .modal-container {
+  background-color: white;
+  direction: rtl;
+  padding: 16px 24px 32px 24px;
+}
+
+.modal-wrapper .modal-container .modal-containerdiv {
+  padding-bottom: 32px;
+}
+.modal-wrapper .modal-container .modal-containerdiv h2 {
+  height: 32px !important;
+  font-size: 16px !important;
+  color: #323232;
+}
+.modal-wrapper .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999;
+}
+.modal-wrapper .overlayselect {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999999;
+}
+
+/* ------------------------------------fullModal---------------- */
+
+.full-modal-wrapper .full-modal-wrapper-content {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.full-modal-wrapper .ReactModal__Content {
+  left: 0 !important;
+  top: -16px !important;
+  height: auto;
+  width: 100% !important;
+  padding: 0px !important;
+  gap: 32px !important;
+  inset: unset !important;
+  bottom: 0px !important;
+  height: fit-content !important;
+}
+
+.full-modal-wrapper .ReactModal__Content {
+  transform: translate3d(0%, 100%, 0);
+}
+
+.full-modal-wrapper .ReactModal__Content--after-open {
+  transform: translate3d(0%, 0, 0);
+  transition: transform 400ms ease-in-out;
+}
+
+.full-modal-wrapper .ReactModal__Content--before-close {
+  transform: translate3d(0%, 100%, 0);
+  transition: transform 400ms ease-in-out;
+}
+.full-modal-wrapper .modal-container {
+  background-color: white;
+  direction: rtl;
+}
+
+.full-modal-wrapper .modal-container .modal-containerdiv {
+  padding-bottom: 32px;
+}
+.full-modal-wrapper .modal-container .modal-containerdiv h2 {
+  height: 32px !important;
+  font-size: 16px !important;
+  color: #323232;
+}
+.full-modal-wrapper .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999;
+}
+.full-modal-wrapper .overlayselect {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999999;
+}
+/* ----------------------------- */
+.colse-btn {
+  padding: 8px;
+  gap: 8px;
+  background-color: #fafafa !important;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+.colse-btn-transparent {
+  padding: 8px;
+  gap: 8px;
+  background-color: #ffffff33;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+.close-modal-textbtn {
+  height: 48px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 12px 12px 12px 12px;
+  gap: 4px;
+  margin-top: 35px;
+  color: #747474;
+}
+.datepicker-input {
+  padding: 12px 8px !important;
+  gap: 123px !important;
+  height: 48px !important;
+  font-size: 14px !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  border: 1px solid #cacaca !important;
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+.custome-select {
+  padding-top: 10px !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0.75rem !important;
+  font-size: 9px !important;
+  margin-top: 7px !important;
+  width: 70px !important;
+  height: 70px !important;
+  text-align: center;
+}
+
+.add-modal-textbtn {
+  height: 48px;
+  background-color: #114f44;
+  border-radius: 8px;
+  padding: 12px 12px 12px 12px;
+  gap: 4px;
+  margin-top: 35px;
+  color: #fff;
+}
+
+.mciBtn {
+  height: 30px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 7px 12px 12px 12px;
+  gap: 4px;
+  margin-top: 35px;
+  color: #747474;
+}
+
+textarea {
+  outline: none;
+  border: 1px solid #cacaca;
+  border-radius: 8px;
+  font-size: 13px;
+}
+/* -------map-------------- */
+.leaflet-container {
+  width: 100%;
+  height: 300px !important;
+}
+.map-current-location {
+  z-index: 1000;
+  left: 11px;
+  top: 90px;
+  outline: 1px solid lightgray;
+}
+/* -----------------------truncate------------- */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* --------------------slider----------------- */
+.swiper {
+  width: 100%;
+  height: 180px;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* background: #F5F5F5; */
+  display: flex !important;
+  justify-content: center;
+  /* align-items: center; */
+  width: auto;
+  /* height: 320px; */
+}
+
+.swiper-slide img {
+  /* border-radius: 20px; */
+}
+.slider_swiperContainer__a6lMW {
+  overflow: unset !important ;
+}
+.swiper-pagination-bullet {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 4px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #781cc3 !important;
+}
+.swiper-custom-pagination {
+  margin-top: 1%;
+}
+/* -----------------flowertable----------- */
+.custom-table .ant-table-thead > tr > th {
+  background-color: white !important;
+  font-size: small;
+  font-family: "dana-fanum";
+}
+.custom-table-container,
+.custom-table {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* --------------------------------------------swal------------------------------------------------- */
+.swal2-icon {
+  font-size: x-small;
+  /* transform: rotatey(180deg); */
+}
+.swal2-html-container,
+.swal2-cancel,
+.swal2-confirm {
+  font-size: smaller !important;
+}
+.swal2-actions {
+  margin: 0.5em auto 0;
+}
+.swal2-container {
+  z-index: 9999999999;
+}
+
+.react-responsive-modal-root {
+  z-index: 99999999 !important;
+}
+.swal2-actions {
+  direction: rtl;
+}
+.swal2-confirm {
+  min-width: 70px !important;
+}
+
+.swal2-cancel {
+  min-width: 70px !important;
+}
+.Toastify__toast-container {
+  position: fixed !important;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.Toastify__toast-body {
+  max-height: 100px;
+  overflow: hidden;
+  font-size: 13px;
+}
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  /* pointer-events: none; */
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+@keyframes spinner-dot {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.bg-purple {
+  background-color: #a464d8de;
+}
+
+.animate-spinner-dot {
+  animation: spinner-dot 1.2s infinite ease-in-out;
+}
+
+.swal2-actions {
+  margin-top: 20px;
+}
+.swal2-confirm {
+  padding: 10px 0;
+  width: 140px;
+}
+.swal2-cancel {
+  width: 100px;
+}
+
+.bottomModalBtn_leftArrowModalBtn__ACFin,
+.bottomModalBtn_leftcloseBtn__GfxO5 {
+  left: 8px;
+  font-size: 12px;
+  top: 12px;
+  background-color: white;
+}
+
+.ril-image-current {
+  width: 90% !important;
+  transform: none !important;
+}
+
+.bill-detail {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgb(240, 240, 240);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+}
+
+.bill-item {
+  border: 1px solid rgb(219, 218, 218);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+}
+
+@media print {
+  .page-break {
+    page-break-before: always;
+  }
+}
+@font-face {
+  font-family: "__myFont_13d9f2";
+  font-family: "dana-fanum";
+  src: local("dana-fanum"), url(/fonts/dana-fanum.ttf) format("truetype");
+}
+
+body {
+  font-family: "__myFont_13d9f2";
+}

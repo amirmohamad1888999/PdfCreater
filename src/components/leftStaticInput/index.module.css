@@ -1,0 +1,26 @@
+.input {
+  padding: 12px 8px;
+  gap: 123px; /* There is no equivalent in plain CSS for the gap property */
+  height: 48px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  /* border: 1px solid #cacaca; */
+}
+
+.input:focus-visible {
+  outline: none !important;
+}
+
+.leftplaceHolder {
+  left: 8px;
+  font-size: 12px;
+  top: 18px;
+  color: #9ca3af;
+}
+
+.height {
+  resize: none;
+  height: 100px;
+  margin-bottom: 10px;
+}

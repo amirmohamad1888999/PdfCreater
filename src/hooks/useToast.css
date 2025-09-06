@@ -1,0 +1,16 @@
+.Toastify__toast-body {
+    font-size: 13px;
+    font-family:  "dana-fanum";
+  }
+  .toastError{
+    background-color: #f35240;
+    color: white;
+  }
+  .toastSuccess{
+    background-color: #10750d;
+    color: white;
+  }
+  .toastWarning{
+    background-color: #fccd11;
+    color: white;
+  }

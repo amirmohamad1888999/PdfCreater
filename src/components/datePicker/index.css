@@ -1,0 +1,26 @@
+.datePickerInput {
+  padding: 12px 8px;
+  width: 100%;
+  gap: 123px;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #cacaca;
+}
+.datePickerInputError {
+  padding: 12px 8px;
+  width: 100%;
+  gap: 123px; 
+  height: 48px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #BA1200;
+}
+.input:focus-visible {
+  outline: none !important;
+}
+.rmdp-container {
+  width: 100% !important;
+}

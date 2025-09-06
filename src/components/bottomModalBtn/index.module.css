@@ -1,0 +1,20 @@
+.btnmodalinput {
+  padding: 12px 8px 12px 8px;
+  gap: 123px;
+  min-height: 48px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+.btnmodalinput:focus-visible {
+  outline: none !important;
+}
+.leftArrowModalBtn,
+.leftcloseBtn {
+  left: 8px;
+  font-size: 12px;
+  /* top: 12px; */
+}
+.textrightplaceHolder {
+  color: #9ca3af;
+  font-size: 14px;
+}

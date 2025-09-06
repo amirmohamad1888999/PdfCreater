@@ -1,0 +1,44 @@
+.progressBarContainer {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 12px;
+  background-color: #ccc; /* Gray background for track */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressStep {
+  flex: 1;
+  height: 12px;
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.currentStep {
+  background-color: orange;
+  border-radius: 10px 0px 0px 10px;
+  transform: scale(1.2); /* Makes the current step pop out */
+}
+
+.nearFinalStep {
+  background-color: green;
+  border-radius: 10px 0px 0px 10px;
+  transform: scale(1.2);
+}
+
+.completedStep {
+  background-color: green;
+}
+
+.futureStep {
+  background-color: #ccc; /* Gray color for future steps */
+}

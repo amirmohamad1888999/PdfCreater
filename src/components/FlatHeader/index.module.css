@@ -1,0 +1,136 @@
+.headercontainer {
+  background: linear-gradient(127.94deg, #582768 0.88%, #582768 98.19%);
+  height: 22%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px 0px 20px 20px;
+}
+.backBtn {
+  /* position: fixed; */
+  /* top: 20px; */
+  /* right: 20px; */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.headerTitle {
+  /* position: fixed; */
+  /* top: 29px; */
+  /* right: 75px; */
+  margin-top: 7px;
+  margin-right: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+}
+.homeHeader {
+  background: linear-gradient(127.94deg, #582768 0.88%, #582768 98.19%);
+  height: 160px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.homeFrom {
+  position: relative;
+  background-color: rgba(244, 244, 244, 1);
+  height: calc(55vh);
+  margin: 0 5%;
+  top: -5%;
+  border-radius: 40px;
+}
+
+.cartContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+}
+
+.boxItem {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 280px;
+  border-radius: 5px;
+  border: 1px solid rgba(202, 202, 202, 1);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.featureItem {
+  font-size: 11px;
+  border: 1px solid #848484;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 0px 5px;
+}
+
+.detailIcon {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  rotate: calc(90deg);
+}
+
+.spaceLine {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  bottom: 15%;
+  background-color: #d9d9d9;
+  height: 1px;
+}
+.profileBack {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  height: 70vh;
+  overflow-y: scroll;
+  padding: 16px;
+  border-radius: 20px 20px 0px 0px;
+  direction: rtl;
+  text-align: right;
+  position: relative;
+}
+
+.logo {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.pay {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+  height: 75px;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 99999999999;
+  background-color: white;
+}
+
+.payButton {
+  width: 130px;
+  height: 45px;
+  color: white;
+  padding-top: 10px;
+  margin-top: 5%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(173, 144, 130, 1);
+}
